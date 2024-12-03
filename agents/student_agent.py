@@ -48,7 +48,7 @@ class StudentAgent(Agent):
     while True:
         try:
             # Attempt to find the best move for the current depth
-            move, score = self.iterative_deepening(chess_board, player, opponent, max_depth, start_time, 1.995)
+            move, score = self.iterative_deepening(chess_board, player, opponent, max_depth, start_time, 1.98)
             if move is not None:
                 best_move = move
         except TimeoutError:
